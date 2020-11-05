@@ -22,7 +22,7 @@
       "Halalsoft\\LaravelRajaongkir\\": "src"
     },
     "files": [
-      "src/LaravelRajaongkir/helpers.php"
+      "src/helpers.php"
     ]
   },
   "extra": {
