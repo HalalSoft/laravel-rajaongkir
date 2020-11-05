@@ -1,0 +1,39 @@
+{
+  "name": "halalsoft/laravel-rajaongkir",
+  "description": "A RAJAONGKIR Wrapper for Laravel",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "rajaongkir",
+    "resi"
+  ],
+  "authors": [
+    {
+      "name": "Muhammad Dyas Yaskur",
+      "email": "dyas@yaskur.com"
+    }
+  ],
+  "require": {
+    "php": ">=7",
+    "illuminate/support": "^5.5|^6|^7|^8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Halalsoft\\LaravelRajaongkir\\": "src"
+    },
+    "files": [
+      "src/LaravelRajaongkir/helpers.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Halalsoft\\LaravelRajaongkir\\RajaongkirServiceProvider"
+      ],
+      "aliases": {
+        "Rajaongkir": "Halalsoft\\LaravelRajaongkir\\Facade"
+      }
+    }
+  },
+  "minimum-stability": "dev"
+}
