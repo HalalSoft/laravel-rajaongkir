@@ -1,6 +1,6 @@
 <?php
 
-namespace HalalSoft\LaravelRajaongkir;
+namespace Halalsoft\LaravelRajaongkir;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -31,7 +31,7 @@ class RajaongkirServiceProvider extends ServiceProvider
         $this->app->bind(
             'halalsoft.laravel-rajaongkir',
             function () {
-                return $this->app->make('HalalSoft\Rajaongkir\Rajaongkir');
+                return $this->app->make('Halalsoft\LaravelRajaongkir\Rajaongkir');
             }
         );
         $this->app->alias('rajaongkir', Rajaongkir::class);
